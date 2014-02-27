@@ -3,4 +3,5 @@ name: 3tgame
 markdown: rdiscount
 pygments: true
 encoding: UTF-8
-baseurl: /myblog
+# baseurl: /myblog
+baseurl: /
