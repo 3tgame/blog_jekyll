@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  使用Markdown和DropBox第3方服务搭建静态博客
+title:  "使用Markdown和DropBox第3方服务搭建静态博客"
 date:   2013-09-01 23:59:18
 categories: [Blog]
 ---
