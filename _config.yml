@@ -1,6 +1,7 @@
 name: 3tgame
 # markdown: redcarpet
 markdown: rdiscount
-pygments: true
+highlighter: rouge
+# highlighter: pygments
 encoding: UTF-8
 # baseurl: /myblog
