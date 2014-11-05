@@ -2,7 +2,7 @@
 layout: post
 title:  "使用Markdown和DropBox第3方服务搭建静态博客"
 date:   2014-09-01 23:59:18
-categories: [other]
+categories: [blog]
 ---
 
 # 注册Scriptogr服务
@@ -16,11 +16,6 @@ categories: [other]
 ## 加入Scriptogr服务需要的说明信息
 
 按照启用Scriptogr服务后，自动创建的一篇介绍文章[This is your blog, delivered by scriptogr.am](http://scriptogr.am/3tgame/post/this-is-your-blog-delivered-by-scriptogr.am)的说明，在编写的Markdown文件前加入如下内容:
-
-    Date: 2011-12-31 12:31
-    Title: This is your blog, delivered by scriptogr.am
-
-> 其中Title是必需的，Date不是必需的。
 
 # 同步Markdown文件到Scriptogr
 
