@@ -7,4 +7,4 @@ categories: [blog]
 
 # 注册Scriptogr服务
 
-到[Scriptogr.am](http://scriptogr.am/)注册服务。注册完成会在Dropbox目录下创建目录**_应用/scriptogram_**,里面的posts目录用于放置Markdown文件。
+
