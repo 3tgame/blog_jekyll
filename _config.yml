@@ -5,3 +5,4 @@ highlighter: rouge
 # highlighter: pygments
 encoding: UTF-8
 # baseurl: /myblog
+baseurl: /
