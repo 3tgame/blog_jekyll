@@ -1,5 +1,6 @@
 name: 3tgame
-markdown: redcarpet
+markdown: maruku
+# markdown: redcarpet
 # markdown: rdiscount
 highlighter: rouge
 # highlighter: pygments
