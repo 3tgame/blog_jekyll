@@ -53,6 +53,7 @@ void luaopen_lua_extensions(lua_State *L)
 *修改内容为*：
 
    增加引入头文件：#include "luamd5/md5.h"
+   
    在luax_exts中增加一项：    { "md5.core", luaopen_md5_core },
 
 # 使用Lua MD5扩展

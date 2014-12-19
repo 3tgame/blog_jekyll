@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   望着天上星星，看似很近、实际很远。
 baseurl: "/myblog" # the subpath of your site, e.g. /blog/
 url: "http://www.tgname.tk" # the base hostname & protocol for your site
-twitter_username: tgnian
+twitter_username: xunyingren
 github_username:  3tgame
 
 # Build settings
