@@ -7,7 +7,7 @@ categories: [Socket]
 
 一方突然关掉电源、防火墙切断不活跃连接、网络出现问题，都可导致一方掉线，另一端如没有发送数据，不会知道该情况。
 
-# 有2中方法处理上述问题
+# 有2种方法处理上述问题
 
 1、TCP keepalive
 
@@ -29,6 +29,6 @@ categories: [Socket]
 
 [TCP Keepalive HOWTO](http://www.tldp.org/HOWTO/html_single/TCP-Keepalive-HOWTO/#preventingdisconnection)
 
-[从微信谈起，如何优化互联网APP心跳机制|微信|心跳|运营商_通讯与电讯_新浪科技_新浪网](http://tech.sina.com.cn/t/csj/2013-04-24/09288273431.shtml)
+[从微信谈起，如何优化互联网APP心跳机制](http://tech.sina.com.cn/t/csj/2013-04-24/09288273431.shtml)
 
 [【Socket】关于socket长连接的心跳包 - 成鹏致远 - 博客园](http://www.cnblogs.com/lcw/p/3565459.html)
