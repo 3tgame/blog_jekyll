@@ -22,7 +22,7 @@ Android安装应用busybox，安装完后会有nc命令
 
 # 使用adb shell 在 Android 设备上执行
 
-{% highlight shell %}
+{% highlight sh %}
 > adb shell
 $ su
 # /data/local/tcpdump -n -s 0 -w - | busybox nc -l -p 11233 
@@ -32,7 +32,7 @@ $ su
 
 # 在电脑上执行
 
-{% highlight shell %}
+{% highlight sh %}
 adb forward tcp:11233 tcp:11233 && d:\install\ncat.exe 127.0.0.1 11233 | "D:\Program Files\Wireshark\Wireshark.exe" -k -S -i -
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ Windows下没有nc命令，可到 [Ncat主页](http://nmap.org/ncat/)下载[已�
 
 参见：
 
-[实时监控Android设备网络封包_UC技术博客](http://tech.uc.cn/?p=2278)
+[实时监控Android设备网络封包-UC技术博客](http://tech.uc.cn/?p=2278)
 
 [如何利用tcpdump抓取andorid网络数据请求，Wireshark可清晰的查看到网络请求的各个过程包括三次握手，但Fiddler进行网络数据抓包和展现更方便](http://www.trinea.cn/android/tcpdump_wireshark/)
 
