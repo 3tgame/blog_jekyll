@@ -18,19 +18,19 @@ lager 是一个Erlang 日志框架，github地址为 https://github.com/basho/la
 
 从上到下，级别递增。设置日志级为特定级别，会把该级别及以上级别的日志输出。
 
-   debug
-   info
-   notice
-   warning
-   error
-   critical
-   alert
-   emergency
+    debug
+    info
+    notice
+    warning
+    error
+    critical
+    alert
+    emergency
 
 # 运行时改变日志级别
 
-   lager:set_loglevel(lager_console_backend, debug).
-   lager:set_loglevel(lager_file_backend, "console.log", debug).
+    lager:set_loglevel(lager_console_backend, debug).
+    lager:set_loglevel(lager_file_backend, "console.log", debug).
 
 # 记录日志
 
