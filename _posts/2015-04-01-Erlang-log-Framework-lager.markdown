@@ -78,9 +78,9 @@ lager 是一个Erlang 日志框架，github地址为 https://github.com/basho/la
 
 ## 根据属性重定向日志
 
-   lager:warning([{request, RequestID},{vhost, Vhost}], "Permission denied to ~s", [User]).
+    lager:warning([{request, RequestID},{vhost, Vhost}], "Permission denied to ~s", [User]).
 现可根据这些额外属性进行追踪
-   lager:trace_console([{request, '>', 117}, {request, '<', 120}]).
+    lager:trace_console([{request, '>', 117}, {request, '<', 120}]).
 
 参见：
 
