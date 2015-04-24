@@ -36,6 +36,7 @@ debug() ->
 # 问题1
 
 如果提示
+
      "Failed to interpret modules on node wxhl_1_1@127.0.0.1:server_reader, ... Make sure they are compiled with debug_info option, their sources are located in same directory as .beam files, modules are available on the node."
 
 ## 先检查编译选项是否有如下选项：
@@ -62,7 +63,7 @@ debug() ->
 
 如果输出错误
 
-***WARNING*** Unexp msg {trace,<0.806.0>,'receive',
+     ***WARNING*** Unexp msg {trace,<0.806.0>,'receive',
                             {mysql_recv,<0.808.0>,data,
                                 <<17,49,56,48,50,51,49,57,52,54,48,50,53,52,56,
                                   48,56,55,1,48,18,233,178,129,232,142,189,231,
