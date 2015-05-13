@@ -35,6 +35,7 @@ Erlang Shell遇到异常，会重新创建一个Shell，相当于重新创建1�
 
 
 参见
+
 [ets,当创建的进程死掉之后,ETS的所有权转移到继任者_五月jks_新浪博客](http://blog.sina.com.cn/s/blog_96b8a15401012rwj.html)
 
 [Eralng ets学习总结 - 积累点滴，成就梦想 - ITeye技术网站](http://diaocow.iteye.com/blog/1768647)       
