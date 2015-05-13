@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 在Windows下使用图形化界面查看Linux节点信息
+title: Eralng ETS消失
 date: 2015-05-13 18:08:18
 categories: [Erlang]
 ---
