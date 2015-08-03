@@ -49,4 +49,4 @@ Erlang Shell遇到异常，会重新创建一个Shell，相当于重新创建1�
 
 [gen_tcp的close与delay_send交叉问题 - - ITeye技术网站](http://wqtn22.iteye.com/blog/1765741)
 
-[gen_tcp调用进程收到{empty_out_q, Port}消息奇怪行为分析 | 系统技术非业余研究](http://blog.yufeng.info/archives/1489)
+[gen_tcp调用进程收到{empty_out_q, Port}消息奇怪行为分析  系统技术非业余研究](http://blog.yufeng.info/archives/1489)
