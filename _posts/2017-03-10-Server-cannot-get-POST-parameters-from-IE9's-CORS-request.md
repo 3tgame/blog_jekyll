@@ -2,7 +2,7 @@
 published: false
 layout: post
 title: IE9跨域发送POST请求，服务端获取不到POST参数
-date: {}
+date: 2017-03-10T15:30:18.000Z
 categories:
   - 跨域
 ---
