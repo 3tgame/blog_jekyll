@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: IE9跨域发送POST请求，服务端获取不到POST参数
 date: 2017-03-10T15:30:18.000Z
@@ -102,5 +102,7 @@ if(preg_match('/MSIE\s9/i',$user_agent))
 ## 参见
 
 [XDomainRequest – Restrictions, Limitations and Workarounds](https://blogs.msdn.microsoft.com/ieinternals/2010/05/13/xdomainrequest-restrictions-limitations-and-workarounds/)
+
 [PHP:$_POST -Manual](http://php.net/manual/zh/reserved.variables.post.php)
+
 [How to get POST parameters with wrong header](http://stackoverflow.com/questions/8183397/how-to-get-post-parameters-with-wrong-header)
