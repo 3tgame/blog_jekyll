@@ -2,7 +2,7 @@
 published: false
 layout: post
 title: IE9跨域发送POST请求，服务端获取不到POST参数
-date: 2017-03-10T15:30:18.000Z
+date: {}
 categories:
   - 跨域
 ---
@@ -40,13 +40,12 @@ categories:
 
 使用Postman模拟请求，Body选择“x-www-form-urlencoded”，Header取消勾选“Content-Type”，点击“Code”，即可看到发送内容如下：
 
-`POST /store/server/public/admin/auth/login HTTP/1.1
-Host: 192.168.31.99
-Cache-Control: no-cache
-Postman-Token: 0f0d1b4c-e1e8-9e20-3fed-4663b6444ca4
+	POST /store/server/public/admin/auth/login HTTP/1.1
+    Host: 192.168.31.99
+	Cache-Control: no-cache
+	Postman-Token: 0f0d1b4c-e1e8-9e20-3fed-4663b6444ca4
 
-account=xxxx&password=yyyy&captcha=etnmb
-`
+	account=xxxx&password=yyyy&captcha=etnmb
 
 点击“发送”，看到服务端输出日志中$_POST数组为空。
 
@@ -83,7 +82,7 @@ account=xxxx&password=yyyy&captcha=etnmb
 
 “To workaround this issue, server code that currently processes HTML Forms must be rewritten to manually parse the request body into name-value pairs when receiving requests from XDomainRequest objects. This makes adding support for the XDomainRequest object more difficult than it would be otherwise.”
 
-对于PHP框架，参见[How to get POST parameters with wrong header](http://stackoverflow.com/questions/8183397/how-to-get-post-parameters-with-wrong-header),可使用以下方法解决:
+对于PHP框架，参见[How to get POST parameters with wrong header](http://stackoverflow.com/questions/8183397/how-to-get-post-parameters-with-wrong-header)，可使用以下方法解决:
 
 `if (count($_POST) == 0)
 {
@@ -105,5 +104,3 @@ if(preg_match('/MSIE\s9/i',$user_agent))
 [XDomainRequest – Restrictions, Limitations and Workarounds](https://blogs.msdn.microsoft.com/ieinternals/2010/05/13/xdomainrequest-restrictions-limitations-and-workarounds/)
 [PHP:$_POST -Manual](http://php.net/manual/zh/reserved.variables.post.php)
 [How to get POST parameters with wrong header](http://stackoverflow.com/questions/8183397/how-to-get-post-parameters-with-wrong-header)
-
-
