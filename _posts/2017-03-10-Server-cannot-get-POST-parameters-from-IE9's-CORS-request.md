@@ -24,11 +24,11 @@ categories:
 发现输出为
 
 > Array
-(
-    [account] => xxxx
-    [password] => yyy
-    [captcha] => etnmb
-)
+> (
+>    [account] => xxxx
+>    [password] => yyy
+>    [captcha] => etnmb
+> )
 
 业务逻辑没有报错。
 
