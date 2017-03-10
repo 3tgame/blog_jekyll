@@ -26,7 +26,7 @@ categories:
     Array
 	(
 		[account] => xxxx
-        [password] => yyy
+		[password] => yyy
 		[captcha] => etnmb
 	)
 
@@ -41,7 +41,7 @@ categories:
 使用Postman模拟请求，Body选择“x-www-form-urlencoded”，Header取消勾选“Content-Type”，点击“Code”，即可看到发送内容如下：
 
 	POST /store/server/public/admin/auth/login HTTP/1.1
-    Host: 192.168.31.99
+	Host: 192.168.31.99
 	Cache-Control: no-cache
 	Postman-Token: 0f0d1b4c-e1e8-9e20-3fed-4663b6444ca4
 
