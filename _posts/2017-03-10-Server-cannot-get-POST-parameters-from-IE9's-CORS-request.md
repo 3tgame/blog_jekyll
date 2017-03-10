@@ -8,8 +8,8 @@ categories:
 ---
 ## 服务端写日志打印POST参数
 
-如使用PHP框架，则可使用 error_log(print_r($_POST, true));  打印请求POST参数。
-使用 error_log(file_get_contents("php://input"))  打印请求body。
+如使用PHP框架，则可使用 `error_log(print_r($_POST, true));`  打印请求POST参数。
+使用 `error_log(file_get_contents("php://input"));`  打印请求body。
 
 ## 使用IE9发送跨域POST请求
 
