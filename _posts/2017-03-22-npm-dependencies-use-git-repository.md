@@ -12,7 +12,7 @@ Git仓库，可以是自己建的，可以是Github仓库，本文以Coding.net�
 ## 指定http url
 也支持直接使用 http 指定压缩包url，从项目代码页面右上方可看到“下载”按钮，可从中获得代码压缩包url，可配置如下：
 
-"jkpt_mobile": "https://coding.net/t/eyevision/p/jkpt_mobile/git/archive/develop"
+	"jkpt_mobile": "https://coding.net/t/eyevision/p/jkpt_mobile/git/archive/develop"
 
 但在Coding.net没找到该方法的授权方式，故该方式不支持使用私有项目。
 
@@ -66,8 +66,10 @@ Git仓库，可以是自己建的，可以是Github仓库，本文以Coding.net�
 参见 [怎样在每次 Push 时不用重复输入密码？](https://coding.net/help/faq/git/git.html#push-)
 
 # 使用Coding.net公有仓库
-如果使用公有仓库，则除可使用以上私有仓库介绍的方式（不需配置授权信息）外，还可使用如下方式。
+如果使用公有仓库，则除可使用以上私有仓库介绍的方式（不需配置授权信息）外，还可使用git://协议。
+
 在 package.json 中配置
+
      "dependencies": {
           "jkpt_mobile": "git://git.coding.net:eyevision/jkpt_mobile.git#develop"
      }
