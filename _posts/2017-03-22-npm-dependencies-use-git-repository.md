@@ -49,11 +49,11 @@ Git仓库，可以是自己建的，可以是Github仓库，本文以Coding.net�
 ### Windows下的授权（本文以Window 10 为例）
 执行 npm install（或执行 git clone https://git.coding.net/eyevision/jkpt_mobile.git#develop），如没有授权信息，则会弹出一下窗口，提示输入你在coding.net的用户名、密码。
 
-![enter_credential.png]({{site.baseurl}}/_images/enter_credential.png)
+![enter_credential.png]({{site.baseurl}}/assets/enter_credential.png)
 
 添加后，可在 Window 10 中的 cortana 中输入“Credential Manager”，打开“凭证管理器”，可看到已加入git.coding.net的凭证。
 
-![credential_manager.png]({{site.baseurl}}/_images/credential_manager.png)
+![credential_manager.png]({{site.baseurl}}/assets/credential_manager.png)
 
 如没有，可在这里按上图所示的信息，手动添加一个普通凭证。
 
@@ -79,5 +79,9 @@ Git仓库，可以是自己建的，可以是Github仓库，本文以Coding.net�
           "jkpt_mobile": "git://git.coding.net:eyevision/jkpt_mobile.git#develop"
      }
 
+# 总结
+对于Windows平台，推荐使用git+https方式，这种方法配置最少，且更方便区分用户，因为使用了“Credential Manager”也不用担心用户信息泄露。
+
+对于Linux平台，也可使用git+https方式 和git+ssh方式都可。
 
 
