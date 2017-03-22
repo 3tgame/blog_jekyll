@@ -1,5 +1,10 @@
 ---
-published: false
+published: true
+layout: post
+title: npm dependencies 使用Git仓库
+date: 2017-03-22T17:10:18.000Z
+categories:
+  - npm git
 ---
 Git仓库，可以是自己建的，可以是Github仓库，本文以Coding.net仓库为例。
 
