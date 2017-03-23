@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: npm dependencies 使用Git仓库
-date: 2017-03-22T17:10:18.000Z
+date: {}
 categories:
   - npm git
 ---
@@ -35,7 +35,7 @@ Git仓库，可以是自己建的，可以是Github仓库，本文以Coding.net�
      # 生成的非默认地址的公钥存放点
      IdentityFile ~/.ssh/coding_rsa
 
-然后在Coding.net的项目或个人账户里添加公钥，添加方法参考[配置SSH公钥](https://coding.net/help/doc/git/ssh-key.html#section) 。
+然后在Coding.net的项目或个人账户里添加公钥，添加方法参考 [配置SSH公钥](https://coding.net/help/doc/git/ssh-key.html#section) 。
 
 首次建立连接会要求信任主机，因此在 Git Bash（在Windows安装Git后，在任意目录右键菜单项中选择“Git Bash Here”，即可打开Git Bash） 中，执行 ssh -T git@git.coding.net，输入yes，信任主机后，才执行 npm install
 
@@ -44,7 +44,11 @@ Git仓库，可以是自己建的，可以是Github仓库，本文以Coding.net�
 
      "jkpt_mobile": "git+https://git.coding.net/eyevision/jkpt_mobile.git#develop"
 
-#后面可指定分支名，或tag，或commit id
+#后面可指定分支名，或tag，或commit id。
+
+如#后面使用分支名，则每次npm install，会拉取该分支最新的提交。从nmp install的输出信息可看出，每次npm install时，都会拿最新的commit id替换分支名，如
+
+     git+https://git.coding.net/eyevision/jkpt_mobile.git#883980f09ec57f9a58c50d16aa7344285bb10188
 
 ### Windows下的授权（本文以Window 10 为例）
 执行 npm install（或执行 git clone https://git.coding.net/eyevision/jkpt_mobile.git#develop），如没有授权信息，则会弹出一下窗口，提示输入你在coding.net的用户名、密码。
@@ -76,12 +80,10 @@ Git仓库，可以是自己建的，可以是Github仓库，本文以Coding.net�
 在 package.json 中配置
 
      "dependencies": {
-          "jkpt_mobile": "git://git.coding.net:eyevision/jkpt_mobile.git#develop"
+          "jkpt_mobile": "git://git.coding.net/eyevision/jkpt_mobile.git#develop"
      }
 
 # 总结
 对于Windows平台，推荐使用git+https方式，这种方法配置最少，且更方便区分用户，因为使用了“Credential Manager”也不用担心用户信息泄露。
 
 对于Linux平台，也可使用git+https方式 和git+ssh方式都可。
-
-
