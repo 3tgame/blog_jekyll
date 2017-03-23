@@ -51,7 +51,15 @@ Git仓库，可以是自己建的，可以是Github仓库，本文以Coding.net�
      git+https://git.coding.net/eyevision/jkpt_mobile.git#883980f09ec57f9a58c50d16aa7344285bb10188
 
 ### Windows下的授权（本文以Window 10 为例）
-执行 npm install（或执行 git clone https://git.coding.net/eyevision/jkpt_mobile.git#develop），如没有授权信息，则会弹出一下窗口，提示输入你在coding.net的用户名、密码。
+执行 npm install，如没有授权信息，执行以下命令缓存Git使用的用户名、密码，不用每次输入，参加 [Caching your GitHub password in Git - User Documentation](https://help.github.com/articles/caching-your-github-password-in-git/)。
+ 
+     git config --global credential.helper wincred 
+
+在执行以下命令，输入用户名、密码。clone下来后的仓库可删除。
+
+     git clone https://git.coding.net/eyevision/jkpt_mobile.git#develop
+ 
+则会弹出一下窗口，提示输入你在Coding.net的用户名、密码。如果是在命令行提示输入用户名，不要输入邮箱，从Coding.net 我的账户页面的个性后缀信息中获取用户名，输入用户名。
 
 ![enter_credential.png]({{site.baseurl}}/assets/enter_credential.png)
 
