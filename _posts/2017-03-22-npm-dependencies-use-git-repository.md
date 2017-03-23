@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: npm dependencies 使用Git仓库
-date: {}
+date: 2017-03-22T17:10:18.000Z
 categories:
   - npm git
 ---
