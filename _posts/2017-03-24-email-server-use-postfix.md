@@ -19,6 +19,7 @@ TXT记录用来保存域名的附加文本信息，TXT记录的内容按照一�
 
 # 配置
 编辑 /etc/postfix/main.cf 文件，内容如下：
+
      # 邮件服务器的主机名称，若信件的mail to 字段是该主机名称，且该名称符合mydestination的设定，信件会被该主机收下，否则进行relay判断。
      myhostname = mail.xxx.com
      # 主机名称去掉第一部分后的域名。
@@ -42,16 +43,19 @@ TXT记录用来保存域名的附加文本信息，TXT记录的内容按照一�
 
 ## 邮件服务器的使用权限 /etc/postfix/access
 /etc/postfix/access 用于控制relay的用户，一下配置允许 120.114.141.60 和 .edu.cn 域名的用户使用这台机器转递信件，而不允许 192.168.2.0/24 和 ban.com 域名的用户：
+
      120.114.141.60      OK
      .edu.cn                   OK
      ban.com                 REJECT
      192.168.2.              REJECT
 
 使用这个文件控制的好处是不用重启Postfix，只要执行以下命令即可，会生成 /etc/postfix/access.db（特定格式，加快读取配置）。
+
      postmap hash:/etc/postfix/access
 
 ## 邮件别名 /etc/aliases
 系统中有很多系统账号，如apache、mysql、nginx等，以这些账号执行的程序有消息产生时，将会以email方式传给谁，因为这些系统账号没有密码登陆，看不到邮件，所以这些系统账号的消息都发送给root。这就是通过 /etc/alias 设置的，内容如下：
+
      mailer-daemon: postmaster
      postmaster: root
      bin: root
@@ -60,17 +64,22 @@ TXT记录用来保存域名的附加文本信息，TXT记录的内容按照一�
 左边是别名，右边是实际存在的账号或email address。
 
 也可以用于用于发送群邮件，如发送邮件到student2011这个不存在的账号，邮件会被发送到各个账号，/etc/aliases 配置如下：
+
      student2011: std001,std002,std003,std004
 
 执行以下命令，生成邮件别名资料库  /etc/aliases.db：
+
      postalias hash:/etc/aliases
 
 如果对外开放访问邮件服务器，则需要开放25端口：
+
      iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 25 -j ACCEPT
 
 # 启动
      service postfix start
+     
 开机启动
+
      chkconfig --level 345 postfix on
 
 # 寄信测试：
@@ -123,6 +132,7 @@ TXT记录用来保存域名的附加文本信息，TXT记录的内容按照一�
 执行  postmap hash:/etc/postfix/access ，提示“postmap: /usr/local/mysql/lib/libmysqlclient.so.18: no version information available (required by postmap) ”
 
 原因：执行 locate mysqlclient |xargs ls -lha ，输出
+
      lrwxrwxrwx  1 root root    20 3月  21 14:39 /usr/lib64/mysql/libmysqlclient_r.so.18 -> libmysqlclient.so.18
      lrwxrwxrwx  1 root root    24 3月  21 14:39 /usr/lib64/mysql/libmysqlclient_r.so.18.1.0 -> libmysqlclient.so.18.1.0
      lrwxrwxrwx  1 root root    24 3月  21 14:39 /usr/lib64/mysql/libmysqlclient.so.18 -> libmysqlclient.so.18.1.0
