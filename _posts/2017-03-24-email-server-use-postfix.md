@@ -94,7 +94,7 @@ TXT记录用来保存域名的附加文本信息，TXT记录的内容按照一�
      Connected to localhost.
      Escape character is '^]'.
      220 server.unixmen.local ESMTP Postfix
-     ehlo localhost                                               ## type this command ##
+     ehlo localhost                             ## type this command ##
      250-server.unixmen.local
      250-PIPELINING
      250-SIZE 10240000
@@ -103,16 +103,16 @@ TXT记录用来保存域名的附加文本信息，TXT记录的内容按照一�
      250-ENHANCEDSTATUSCODES
      250-8BITMIME
      250 DSN
-     mail from:root                                              ## Type this - mail sender address##
+     mail from:root                             ## Type this - mail sender address##
      250 2.1.0 Ok
-     rcpt to:xxx.qq.com                                       ## Type this - mail receiver address ##
+     rcpt to:xxx.qq.com                         ## Type this - mail receiver address ##
      250 2.1.5 Ok
-     data                                                               ## Type this to input email message ##
+     data                                       ## Type this to input email message ##
      354 End data with <CR><LF>.<CR><LF>
-     welcome to unixmen mail server                ## Enter the boddy of the email ##
-     .                                                                     ## type dot (.) to complete message ##
+     welcome to unixmen mail server             ## Enter the boddy of the email ##
+     .                                          ## type dot (.) to complete message ##
      250 2.0.0 Ok: queued as B822221522
-     quit                                                               ## type this to quit from mail ##
+     quit                                       ## type this to quit from mail ##
      221 2.0.0 Bye
      Connection closed by foreign host.
     
@@ -151,6 +151,6 @@ TXT记录用来保存域名的附加文本信息，TXT记录的内容按照一�
 # 参见
 [鳥哥的 Linux 私房菜 -- Mail Server](http://linux.vbird.org/linux_server/0380mail.php#postfix)
 
-[How To Install Postfix on CentOS 6 | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6)
+[How To Install Postfix on CentOS 6 -- DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6)
 
-[Setup Local Mail Server Using Postfix, Dovecot And Squirrelmail On CentOS 6.5/6.4 | Unixmen](https://www.unixmen.com/install-postfix-mail-server-with-dovecot-and-squirrelmail-on-centos-6-4/)
+[Setup Local Mail Server Using Postfix, Dovecot And Squirrelmail On CentOS 6.5/6.4 -- Unixmen](https://www.unixmen.com/install-postfix-mail-server-with-dovecot-and-squirrelmail-on-centos-6-4/)
