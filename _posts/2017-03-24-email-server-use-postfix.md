@@ -1,5 +1,10 @@
 ---
-published: false
+published: true
+layout: post
+title: 使用Postfix搭建邮件服务器
+date: 2017-03-24T17:18:18.000Z
+categories:
+  - email centos
 ---
 Linux下搭建邮件服务器，包括用于发送邮件的 Postfix（Postfix 比 Sendmail容易配置、处理更快），用于接收邮件的 Dovecot，用于使用web页面操作邮件的 Squirrelmail。下文只说明搭建用于发送邮件的Postfix。
 
