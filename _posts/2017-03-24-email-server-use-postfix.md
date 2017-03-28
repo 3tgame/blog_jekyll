@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: 使用Postfix搭建邮件服务器
-date: {}
+date: 2017-03-24T17:18:18.000Z
 categories:
   - email centos
 ---
