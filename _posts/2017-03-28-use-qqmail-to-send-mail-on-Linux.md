@@ -11,6 +11,7 @@ categories:
 # 方法1：使用mailx
 ## 安装
      yum install mailx
+
 ## 配置
 编辑 /etc/mail.rc 文件，添加如下内容：
 
@@ -65,6 +66,6 @@ categories:
 从 /var/log/maillog 可查看日志信息。
 
 # 参见
-     [How To Setup Email Alerts on Linux Using Gmail or SMTP](https://www.howtogeek.com/51819/how-to-setup-email-alerts-on-linux-using-gmail/)
+[How To Setup Email Alerts on Linux Using Gmail or SMTP](https://www.howtogeek.com/51819/how-to-setup-email-alerts-on-linux-using-gmail/)
  
-     [LINUX下通过外部SMTP发邮件 （直接抛弃sendmail和postfix） - xiaoshi1991 - 博客园](http://www.cnblogs.com/xiaoshi1991/archive/2012/09/19/2694465.html)
+[LINUX下通过外部SMTP发邮件 （直接抛弃sendmail和postfix） - xiaoshi1991 - 博客园](http://www.cnblogs.com/xiaoshi1991/archive/2012/09/19/2694465.html)
