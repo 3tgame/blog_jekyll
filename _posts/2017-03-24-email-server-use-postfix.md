@@ -123,9 +123,11 @@ TXT记录用来保存域名的附加文本信息，TXT记录的内容按照一�
 使用以下命令发送邮件，提示“send-mail: Cannot open mail:25”
 
      echo "This will go into the body of the mail." | mail -s "Hello world" xxx@qq.com
+
 原因：错误提示 表示打开到服务器mail的25端口，也是因为没有修改mail 配置
 
 解决：修改 mail 客户端配置文件 /etc/ssmtp/ssmtp.conf 如下：
+
      mailhub=localhost
  
 ## 问题2
@@ -144,7 +146,7 @@ TXT记录用来保存域名的附加文本信息，TXT记录的内容按照一�
      lrwxrwxrwx. 1 root mysql   24 10月 15 2015 /usr/local/mysql/lib/libmysqlclient.so.18 -> libmysqlclient.so.18.0.0
      -rwxr-xr-x  1 root mysql 6.9M 10月 15 2015 /usr/local/mysql/lib/libmysqlclient.so.18.0.0
 
-     因为 postmap 需要的libmysqlclient版本与 使用libmysqlclient 不一致。
+因为 postmap 需要的libmysqlclient版本与 使用libmysqlclient 不一致。
 
 解决：编辑 /etc/ld.so.conf，把 /usr/local/mysql/lib/mysql 加到最前面，执行 ldconfig。
 
