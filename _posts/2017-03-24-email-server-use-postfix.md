@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: 使用Postfix搭建邮件服务器
-date: 2017-03-24T17:18:18.000Z
+date: {}
 categories:
   - email centos
 ---
@@ -122,7 +122,7 @@ TXT记录用来保存域名的附加文本信息，TXT记录的内容按照一�
 ## 问题1
 使用以下命令发送邮件，提示“send-mail: Cannot open mail:25”
 
-     echo "This will go into the body of the mail." | mail -s "Hello world" tguonian@qq.com
+     echo "This will go into the body of the mail." | mail -s "Hello world" xxx@qq.com
 原因：错误提示 表示打开到服务器mail的25端口，也是因为没有修改mail 配置
 
 解决：修改 mail 客户端配置文件 /etc/ssmtp/ssmtp.conf 如下：
