@@ -21,6 +21,7 @@ Tomcat支持以更轻量的方式配置多实例。Tomcat有2个环境变量，C
 4. 增加启动、关闭脚本
 
    在 /tomcat/bin目录新增 exec.sh 脚本，内容如下：
+   
 ```
 #!/bin/bash
 
@@ -37,15 +38,18 @@ echo "CATALINA_HOME set to $CATALINA_HOME"
 
 $CATALINA_HOME/bin/"$(basename "$0")" "$@"
 ```
+
    在bin目录创建软链接startup.sh、shutdown.sh 链接到exec.sh
+   
 ``` 
 cd /tomcat/bin
 ln -s exec.sh startup.sh
 ln -s exec.sh shutdown.sh
 ```
+
 5. 新增 /tomcat/bin/setenv.sh 文件，配置运行参数（可选）
 
-     可把以上过程写在tomcat_instance_init.sh脚本，方便自动化处理。  
+可把以上过程写在tomcat_instance_init.sh脚本，方便自动化处理。  
  
 # 启动
      /tomcat/bin/startup.sh 
