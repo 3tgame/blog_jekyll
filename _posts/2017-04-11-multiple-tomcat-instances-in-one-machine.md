@@ -18,7 +18,8 @@ Tomcat支持以更轻量的方式配置多实例。Tomcat有2个环境变量，C
 1. 创建软链接 /tomcat_home 指向 tomcat二进制分发版本解压目录，作为CATALINA_HOME目录，创建 /tomcat 目录作为CATALINA_BASE目录。
 2. 将 CATALINA_HOME 目录的 conf、logs、webapps、work、temp 目录拷贝到 CATALINA_BASE 目录。
 3. 修改 /tomcat/conf/server.xml 里面的监听端口配置 和 其他项目相关配置。
-4. 增加启动、关闭脚本
+4. 新增 /tomcat/bin/setenv.sh 文件，配置运行参数（可选）
+5. 增加启动、关闭脚本
 
    在 /tomcat/bin目录新增 exec.sh 脚本，内容如下：
    
@@ -46,8 +47,6 @@ Tomcat支持以更轻量的方式配置多实例。Tomcat有2个环境变量，C
    ln -s exec.sh startup.sh
    ln -s exec.sh shutdown.sh
    ```
-
-5. 新增 /tomcat/bin/setenv.sh 文件，配置运行参数（可选）
 
 可把以上过程写在tomcat_instance_init.sh脚本，方便自动化处理。  
  
