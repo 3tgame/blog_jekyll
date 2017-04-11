@@ -54,7 +54,7 @@ Tomcat支持以更轻量的方式配置多实例。Tomcat有2个环境变量，C
      /tomcat/bin/startup.sh 
 
 # 其他
-更新Tomcat版本，更新 软链接 /tomcat_home 指向新Tomcat分发版本。
+更新Tomcat版本时，更新 软链接 /tomcat_home 指向新的Tomcat分发版本。
 
 放在 /tomcat_home/lib 目录的jar，会被全部实例共享。
 
