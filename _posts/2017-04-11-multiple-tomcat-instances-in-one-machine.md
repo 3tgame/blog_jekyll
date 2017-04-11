@@ -22,30 +22,30 @@ Tomcat支持以更轻量的方式配置多实例。Tomcat有2个环境变量，C
 
    在 /tomcat/bin目录新增 exec.sh 脚本，内容如下：
    
-```
-#!/bin/bash
+ ```
+ #!/bin/bash
 
-TOMCAT_HOME="$(dirname $0)/.."
-cd $TOMCAT_HOME && TOMCAT_HOME=$PWD && cd - &> /dev/null
-export TOMCAT_HOME
+ TOMCAT_HOME="$(dirname $0)/.."
+ cd $TOMCAT_HOME && TOMCAT_HOME=$PWD && cd - &> /dev/null
+ export TOMCAT_HOME
 
-export CATALINA_HOME="/tomcat_home"
-export CATALINA_BASE="$(readlink -f "$TOMCAT_HOME")"
+ export CATALINA_HOME="/tomcat_home"
+ export CATALINA_BASE="$(readlink -f "$TOMCAT_HOME")"
 
-echo "JAVA_HOME set to $JAVA_HOME"
-echo "CATALINA_BASE set to $CATALINA_BASE"
-echo "CATALINA_HOME set to $CATALINA_HOME"
+ echo "JAVA_HOME set to $JAVA_HOME"
+ echo "CATALINA_BASE set to $CATALINA_BASE"
+ echo "CATALINA_HOME set to $CATALINA_HOME"
 
-$CATALINA_HOME/bin/"$(basename "$0")" "$@"
-```
+ $CATALINA_HOME/bin/"$(basename "$0")" "$@"
+ ```
 
    在bin目录创建软链接startup.sh、shutdown.sh 链接到exec.sh
    
-``` 
-cd /tomcat/bin
-ln -s exec.sh startup.sh
-ln -s exec.sh shutdown.sh
-```
+ ``` 
+ cd /tomcat/bin
+ ln -s exec.sh startup.sh
+ ln -s exec.sh shutdown.sh
+ ```
 
 5. 新增 /tomcat/bin/setenv.sh 文件，配置运行参数（可选）
 
