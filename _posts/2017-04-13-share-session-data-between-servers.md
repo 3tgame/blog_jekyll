@@ -1,5 +1,10 @@
 ---
-published: false
+published: true
+layout: post
+title: 在不同服务器共享Session
+date: 2017-04-13T16:18:18.000Z
+categories:
+  - tomcat session
 ---
 部署负载均衡时，使用一台Nginx作为前端服务器，几台Tomcat作为后端服务器。Nginx根据策略把请求分发给Tomcat服务器。默认Tomcat服务器的session是不可跨服务器共享的，如果同一个用户的不同请求被分发到不同的Tomcat服务器，怎会造成session丢失，要用户重新登录。
 
