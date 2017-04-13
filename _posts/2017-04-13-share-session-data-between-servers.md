@@ -69,11 +69,11 @@ Java框架使用 [redisson](https://github.com/redisson/redisson) 来实现Tomca
 
 ## 配置
 1. 编辑 TOMCAT_BASE/conf/context.xml 文件，添加以下内容： 
-    <Manager className="org.redisson.tomcat.RedissonSessionManager" configPath="${catalina.base}/redisson-config.json" />
+   <Manager className="org.redisson.tomcat.RedissonSessionManager" configPath="${catalina.base}/redisson-config.json" />
 2. 把 redisson-all-2.8.1.jar 和 redisson-tomcat-7-2.8.1.jar 放到 TOMCAT_BASE/lib 目录。
 3. 按照 [Single instance mode](https://github.com/redisson/redisson/wiki/2.-Configuration#262-single-instance-json-yaml-and-spring-xml-config-format) 的说明，编辑 json格式的 redisson-config.json 文件。
 
 # 参见
-[Nginx+tomcat+redis集群之session跟踪（nginx_upstream_jvm_route） | 建均笔记](http://www.wujianjun.org/2016/03/18/nginx-upstream-jvm-route/)
+[Nginx+tomcat+redis集群之session跟踪（nginx_upstream_jvm_route） - 建均笔记](http://www.wujianjun.org/2016/03/18/nginx-upstream-jvm-route/)
 
-[Nginx+tomcat+redis集群之session共享 | 建均笔记](http://www.wujianjun.org/2016/03/17/tomcat-redis-session/)
+[Nginx+tomcat+redis集群之session共享 - 建均笔记](http://www.wujianjun.org/2016/03/17/tomcat-redis-session/)
