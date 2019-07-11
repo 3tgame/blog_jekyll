@@ -53,6 +53,7 @@ Application ClassLoader，该类加载器由 sun.misc.Launcher$AppClassLoader �
      JAR files in $CATALINA_BASE/lib
      unpacked classes and resources in $CATALINA_HOME/lib
      JAR files in $CATALINA_HOME/lib
+     
 ### WebappX
 为每一个web应用创建的class loader，web应用的 /WEB-INF/classes 目录的所有unpacked classes和resources、/WEB-INF/lib 目录的JAR文件的classes和resources，只对当前web应用可见。
 
