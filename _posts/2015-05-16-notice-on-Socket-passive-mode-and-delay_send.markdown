@@ -30,14 +30,6 @@ Socket选项设置如下：
 
 # 解决方法
 
-使用-remsh连接到节点，在Erlang Shell 中执行函数装载配置数据，执行一些语句导致有异常（如1/0），也会发现存放配置数据的ETS不见了。
-
-# 原因
-
-Erlang Shell遇到异常，会重新创建一个Shell，相当于重新创建1个进程。原来的进程结束，由它创建的ETS也会消失。
-
-# 解决方法
-
 不要在对端关闭后（如收到{inet_async, _ClientSocket, _Ref, {error, closed}}后）再向该Socket发送数据；或者关掉delay_send；或者用非被动模式。
 
 
