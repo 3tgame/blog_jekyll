@@ -29,6 +29,7 @@ Git仓库，可以是自己建的，可以是Github仓库，本文以Coding.net�
 该方式需要生成SSH密钥，参考[配置SSH公钥](https://coding.net/help/doc/git/ssh-key.html#section)的方法生产公私钥。生成的公私钥id_rsa、id_rsa.pub默认是在用户目录的 .ssh 中，如Windows则是（C:\Users\xxx\.ssh，其中xxx为用户名），Linux则为~/.ssh。
 
 不要修改生成后的文件名，如修改为coding_rsa，coding_rsa.pub，则需要在~/.ssh/config文件中配置如下：
+
      Host git.coding.net
      #User xxxx@email.com
      PreferredAuthentications publickey
