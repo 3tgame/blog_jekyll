@@ -31,15 +31,15 @@ android:authorities 在Android系统必须具有唯一性，否则安装时报�
     </resources>
 
 paths的子元素可包括：  
-* <files-path>：内部存储空间应用私有目录下的 files/ 目录，等同于 Context.getFilesDir() 所获取的目录路径；
-* <cache-path>：内部存储空间应用私有目录下的 cache/ 目录，等同于 Context.getCacheDir() 所获取的目录路径；
-* <external-path>：外部存储空间根目录，等同于 Environment.getExternalStorageDirectory() 所获取的目录路径；
-* <external-files-path>：外部存储空间应用私有目录下的 files/ 目录，等同于 Context.getExternalFilesDir(null) 所获取的目录路径；
-* <external-cache-path>：外部存储空间应用私有目录下的 cache/ 目录，等同于 Context.getExternalCacheDir() 所获取的目录路径；
+    * <files-path>：内部存储空间应用私有目录下的 files/ 目录，等同于 Context.getFilesDir() 所获取的目录路径；
+    * <cache-path>：内部存储空间应用私有目录下的 cache/ 目录，等同于 Context.getCacheDir() 所获取的目录路径；
+    * <external-path>：外部存储空间根目录，等同于 Environment.getExternalStorageDirectory() 所获取的目录路径；
+    * <external-files-path>：外部存储空间应用私有目录下的 files/ 目录，等同于 Context.getExternalFilesDir(null) 所获取的目录路径；
+    * <external-cache-path>：外部存储空间应用私有目录下的 cache/ 目录，等同于 Context.getExternalCacheDir() 所获取的目录路径；
 
 path 属性用于指定当前子元素所代表目录下需要共享的子目录名称。  
 name 属性用于给 path 属性所指定的子目录名称取一个别名。  
-例子：对于 /data/data/com.xxx.nodeservice/files/images/pic.png，因为它位于内部存储空间应用私有目录下的 files/ 目录，所以对应的是 <files-path name="my_images"  path="images" /> 这一规则。  
+例子：对于 /data/data/com.xxx.nodeservice/files/images/pic.png，因为它位于内部存储空间应用私有目录下的 files/ 目录，所以对应的是 `<files-path name="my_images"  path="images" />` 这一规则。  
     Uri uil = FileProvider.getUriForFile(this, BuildConfig.APPLICATION_ID + ".fileprovider",  new File('/data/data/com.xxx.nodeservice/files/images/pic.png')); 的返回值为
     content://com.xxx.nodeservice.fileprovider/my_images/pic.png  
 
