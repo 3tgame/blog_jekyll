@@ -4,12 +4,14 @@ email: 3tgame@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   一直在寻找，下个路口会遇见谁。望着天上的月亮，有种我走它走的错觉。时间告诉我，它不会等我。
   望着天上星星，看似很近、实际很远。
-baseurl: "/myblog" # the subpath of your site, e.g. /blog/
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "http://www.tgname.tk" # the base hostname & protocol for your site
 twitter_username: xunyingren
 github_username:  3tgame
 qq_group: qq群：376374734
 qq_group_link: https://jq.qq.com/?_wv=1027&k=5ggPyQW
+telegram_channel: telegram频道：自由增长
+telegram_channel_link: https://t.me/ziyouzengzhang
 
 # Build settings
 markdown: kramdown
