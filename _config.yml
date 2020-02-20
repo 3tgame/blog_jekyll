@@ -8,9 +8,9 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "http://www.tgname.tk" # the base hostname & protocol for your site
 twitter_username: xunyingren
 github_username:  3tgame
-qq_group: qq群：376374734
+qq_group: 376374734
 qq_group_link: https://jq.qq.com/?_wv=1027&k=5ggPyQW
-telegram_channel: telegram频道：自由增长
+telegram_channel: 自由增长
 telegram_channel_link: https://t.me/ziyouzengzhang
 
 # Build settings
